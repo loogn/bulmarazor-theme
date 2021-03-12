@@ -1,0 +1,30 @@
+{
+  "name": "bulmarazor-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-bulma && npm run clean-bulma",
+    "build-bulma": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "clean-bulma": "cleancss -o css/bulma.min.css css/bulma.css",
+
+    "buildmy": "npm run build-mybulma && npm run clean-mybulma",
+    "build-mybulma": "node-sass --output-style expanded --source-map true mybulma.sass css/mybulma.css",
+    "clean-mybulma": "cleancss -o css/mybulma.min.css css/mybulma.css",
+    
+
+    "build": "npm run build-bulma && npm run clean-bulma",
+    "build-bulma": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "clean-bulma": "cleancss -o css/bulma.min.css css/bulma.css",
+
+    "rtl": "npm run rtl-sass && npm run rtl-cleancss",
+    "rtl-sass": "node-sass --output-style expanded --source-map true bulma-rtl.sass css/bulma-rtl.css",
+    "rtl-cleancss": "cleancss -o css/bulma-rtl.min.css css/bulma-rtl.css"
+  },
+  "author": "lucky7",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "clean-css-cli": "^4.3.0"
+  }
+}
