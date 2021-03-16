@@ -5021,16 +5021,16 @@ button.dropdown-item.is-active {
 
 .menu-list a:hover {
   background-color: whitesmoke;
-  color: #363636;
+  color: #00d1b2;
 }
 
 .menu-list a.is-active {
-  background-color: #485fc7;
+  background-color: #00d1b2;
   color: #fff;
 }
 
 .menu-list li ul {
-  border-left: 1px solid #dbdbdb;
+  border-left: 0px solid #dbdbdb;
   margin: 0.75em;
   padding-left: 0.75em;
 }
