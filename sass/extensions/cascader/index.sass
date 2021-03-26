@@ -3,21 +3,43 @@
 
 $cascader-active-color: #409eff !default
 
-
 .cascader
-    position: relative
-    display: inline-block
-    width: 220px
+    height: auto
+    &.input:active
+        box-shadow: none
+    .drop-icon
+        position: absolute
+        height: 100%
+        right: 5px
+        top: 0
+        text-align: center
+        color: #c0c4cc
+
+    .cascader-tags
+        flex-grow: 1
+        align-content: flex-start
+        display: flex
+        flex-wrap: wrap
+        height: auto
+        position: relative
+        max-width: 95%
+        overflow: hidden
+        
+        .tag
+            margin: 0.1rem
+            font-size: inherit
+            height: auto
 
     .placeholder
         color: #c0c4cc
         background-color: unset
-    >.icon
-        position: absolute
-        right: 4px
-        top: 0
-        height: 100%
-
+        padding-left: 0
+    .tag-label
+        background-color: unset
+        padding-left: 0
+        max-width: 100%
+        justify-content: flex-start
+   
     .cascader-dropdown
         white-space: nowrap
         background: #fff
@@ -29,6 +51,7 @@ $cascader-active-color: #409eff !default
         left: 0
         top: 100%
         margin-top: 8px
+        z-index: 2
 
         ul.cascader-item
             display: inline-block
@@ -44,14 +67,13 @@ $cascader-active-color: #409eff !default
 
             >li
                 font-size: 1em
-                padding: 8px 10px 8px 30px
+                padding: 6px 10px 6px 30px
                 position: relative
                 white-space: nowrap
                 overflow: hidden
                 text-overflow: ellipsis
                 color: #606266
-                height: 34px
-                line-height: 1.5
+                line-height: 1.2em
                 box-sizing: border-box
                 cursor: pointer
                 outline: none
@@ -72,6 +94,12 @@ $cascader-active-color: #409eff !default
 
                 input
                     margin-right: 10px
+
+                span.cascader-label
+                    white-space: nowrap
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    flex-grow: 1
 
             &:first-of-type:after
                 content: ""
