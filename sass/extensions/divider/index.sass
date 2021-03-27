@@ -24,11 +24,11 @@ $divider-margin-size: 25px !default
         height: 1px
         background-color: $divider-background-color
 
-    &:not(.is-right)
+    &.has-label:not(.is-right)
         &::after
             margin-left: $divider-margin-inner-size
 
-    &:not(.is-left)
+    &.has-label:not(.is-left)
         &::before
             margin-right: $divider-margin-inner-size
 
@@ -49,11 +49,11 @@ $divider-margin-size: 25px !default
             height: auto
             width: 1px
 
-        &::after
+        &.has-label::after
             margin-left: 0
             margin-top: $divider-margin-inner-size
 
-        &::before
+        &.has-label::before
             margin-right: 0
             margin-bottom: $divider-margin-inner-size
 

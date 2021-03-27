@@ -1,7 +1,7 @@
 
 @charset "utf-8"
 
-$cascader-active-color: #409eff !default
+$cascader-active-color: $link !default
 
 .cascader
     height: auto
@@ -67,7 +67,7 @@ $cascader-active-color: #409eff !default
 
             >li
                 font-size: 1em
-                padding: 6px 10px 6px 30px
+                padding: 6px 10px 6px 15px
                 position: relative
                 white-space: nowrap
                 overflow: hidden
@@ -85,8 +85,8 @@ $cascader-active-color: #409eff !default
 
                 &.active
                     color: $cascader-active-color
-                    font-weight: 500
-
+                .active
+                    color: $cascader-active-color
                 &:hover
                     background-color: $light
                 >i
