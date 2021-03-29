@@ -1,0 +1,53 @@
+
+@charset "utf-8"
+
+$tree-active-color: $link !default
+$tree-hover-background-color: $light !default
+
+.tree
+    position: relative
+
+    .tree-list
+        padding-left: 20px
+        margin: 0
+        display: none
+
+        &.show
+            display: block
+
+    .tree-item
+        list-style: none
+        cursor: pointer
+        margin: 0
+        display: flex
+        align-items: center
+        width: 100%
+
+        &.is-disabled
+            color: #c0c4cc
+            cursor: not-allowed
+        &:before
+            content: ""
+            position: absolute
+            left: 0
+            width: 100%
+            height: 26px
+            transition: background-color .3s linear
+            z-index: -1
+
+        &:hover,&.active
+            &:before
+                background-color: $tree-hover-background-color
+        
+        .tree-content
+            position: relative
+            display: flex
+            padding: 0.15em 0
+            align-items: center
+            flex-grow: 1
+                
+    .tree-root
+        padding: 0
+
+    .cb.active
+        color: $tree-active-color
