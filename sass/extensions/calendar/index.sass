@@ -1,0 +1,45 @@
+@charset "utf-8"
+
+$calendar-selected-bg-color: $primary-light !default
+$calendar-selected-text-color: $primary !default
+
+.calendar
+    .calendar-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 10px 15px
+        border-bottom: 1px solid #dbdbdb
+
+    .calender-title
+        color: #000
+        size: 1.2em
+
+    .calendar-body
+        padding: 0 15px
+
+    .day
+        box-sizing: border-box
+        height: 85px
+        display: flex
+        flex-direction: column
+        align-items: start
+
+    thead:
+    text-align: center
+
+    th
+        border: none
+        padding: 12px 0
+
+    td
+        cursor: pointer
+        &:hover
+            background-color: $calendar-selected-bg-color
+        &.is-selected
+            color: $calendar-selected-text-color
+            background-color: $calendar-selected-bg-color
+        &.is-today
+            color: $calendar-selected-text-color
+        &.other-month
+            color: #c0c4cc

@@ -21515,4 +21515,59 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   color: #485fc7;
 }
 
+.calendar {
+  text-align: center;
+}
+
+.calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.calendar .calender-title {
+  color: #000;
+  size: 1.2em;
+}
+
+.calendar .calendar-body {
+  padding: 0 15px;
+}
+
+.calendar .day {
+  box-sizing: border-box;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.calendar th {
+  border: none;
+  padding: 12px 0;
+}
+
+.calendar td {
+  cursor: pointer;
+}
+
+.calendar td:hover {
+  background-color: #ebfffc;
+}
+
+.calendar td.is-selected {
+  color: #00d1b2;
+  background-color: #ebfffc;
+}
+
+.calendar td.is-today {
+  color: #00d1b2;
+}
+
+.calendar td.other-month {
+  color: #c0c4cc;
+}
+
 /*# sourceMappingURL=bulma.css.map */
