@@ -1,0 +1,32 @@
+@charset "utf-8"
+
+.page-header
+    display: flex
+    line-height: 24px
+
+    .icon
+        font-size: 18px
+        align-self: center
+
+    .page-header-left
+        display: flex
+        cursor: pointer
+        margin-right: 40px
+        position: relative
+        &:after
+            content: ""
+            position: absolute
+            width: 1px
+            height: 16px
+            right: -20px
+            top: 50%
+            transform: translateY(-50%)
+            background-color: #dcdfe6
+
+        .page-header-title
+            font-size: 14px
+            font-weight: 500
+    
+    .page-header-content
+        font-size: 18px
+        color: #303133

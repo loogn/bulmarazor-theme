@@ -21417,11 +21417,11 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
 }
 
 .cascader .cascader-dropdown ul.cascader-item > li.active {
-  color: #485fc7;
+  color: #00d1b2;
 }
 
 .cascader .cascader-dropdown ul.cascader-item > li .active {
-  color: #485fc7;
+  color: #00d1b2;
 }
 
 .cascader .cascader-dropdown ul.cascader-item > li:hover {
@@ -21459,6 +21459,7 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
 
 .tree {
   position: relative;
+  color: #606266;
 }
 
 .tree .tree-list {
@@ -21511,8 +21512,54 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   padding: 0;
 }
 
-.tree .cb.active {
+.tree .cb.is-white:hover,
+.tree .cb.active.is-white {
+  color: white;
+}
+
+.tree .cb.is-black:hover,
+.tree .cb.active.is-black {
+  color: #0a0a0a;
+}
+
+.tree .cb.is-light:hover,
+.tree .cb.active.is-light {
+  color: whitesmoke;
+}
+
+.tree .cb.is-dark:hover,
+.tree .cb.active.is-dark {
+  color: #363636;
+}
+
+.tree .cb.is-primary:hover,
+.tree .cb.active.is-primary {
+  color: #00d1b2;
+}
+
+.tree .cb.is-link:hover,
+.tree .cb.active.is-link {
   color: #485fc7;
+}
+
+.tree .cb.is-info:hover,
+.tree .cb.active.is-info {
+  color: #3e8ed0;
+}
+
+.tree .cb.is-success:hover,
+.tree .cb.active.is-success {
+  color: #48c78e;
+}
+
+.tree .cb.is-warning:hover,
+.tree .cb.active.is-warning {
+  color: #ffe08a;
+}
+
+.tree .cb.is-danger:hover,
+.tree .cb.active.is-danger {
+  color: #f14668;
 }
 
 .calendar {
@@ -21568,6 +21615,223 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
 
 .calendar td.other-month {
   color: #c0c4cc;
+}
+
+.page-header {
+  display: flex;
+  line-height: 24px;
+}
+
+.page-header .icon {
+  font-size: 18px;
+  align-self: center;
+}
+
+.page-header .page-header-left {
+  display: flex;
+  cursor: pointer;
+  margin-right: 40px;
+  position: relative;
+}
+
+.page-header .page-header-left:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #dcdfe6;
+}
+
+.page-header .page-header-left .page-header-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-header .page-header-content {
+  font-size: 18px;
+  color: #303133;
+}
+
+.transfer {
+  display: flex;
+  margin: 1rem;
+  color: #606266;
+}
+
+.transfer .transfer-side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.transfer .transfer-side .panel {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.transfer .transfer-side .panel .panel-block {
+  color: inherit;
+}
+
+.transfer .transfer-side .panel .panel-heading {
+  border-radius: 4px 4px 0 0;
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #ebeef5;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: unset;
+  font-weight: unset;
+  padding: .5em;
+}
+
+.transfer .transfer-title {
+  cursor: pointer;
+  pointer-events: all;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+
+.transfer .transfer-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: all;
+  color: #606266;
+}
+
+.transfer .transfer-list {
+  flex-grow: 1;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+}
+
+.transfer .transfer-num {
+  color: #909399;
+  font-size: 12px;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.transfer .transfer-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.transfer .icon-checkbox.is-checked.is-white,
+.transfer .icon-checkbox.is-white:hover,
+.transfer .transfer-item.is-checked.is-white .icon-checkbox,
+.transfer .transfer-item.is-white:hover,
+.transfer .transfer-item.is-white:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-white {
+  color: white !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-black,
+.transfer .icon-checkbox.is-black:hover,
+.transfer .transfer-item.is-checked.is-black .icon-checkbox,
+.transfer .transfer-item.is-black:hover,
+.transfer .transfer-item.is-black:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-black {
+  color: #0a0a0a !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-light,
+.transfer .icon-checkbox.is-light:hover,
+.transfer .transfer-item.is-checked.is-light .icon-checkbox,
+.transfer .transfer-item.is-light:hover,
+.transfer .transfer-item.is-light:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-light {
+  color: whitesmoke !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-dark,
+.transfer .icon-checkbox.is-dark:hover,
+.transfer .transfer-item.is-checked.is-dark .icon-checkbox,
+.transfer .transfer-item.is-dark:hover,
+.transfer .transfer-item.is-dark:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-dark {
+  color: #363636 !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-primary,
+.transfer .icon-checkbox.is-primary:hover,
+.transfer .transfer-item.is-checked.is-primary .icon-checkbox,
+.transfer .transfer-item.is-primary:hover,
+.transfer .transfer-item.is-primary:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-primary {
+  color: #00d1b2 !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-link,
+.transfer .icon-checkbox.is-link:hover,
+.transfer .transfer-item.is-checked.is-link .icon-checkbox,
+.transfer .transfer-item.is-link:hover,
+.transfer .transfer-item.is-link:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-link {
+  color: #485fc7 !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-info,
+.transfer .icon-checkbox.is-info:hover,
+.transfer .transfer-item.is-checked.is-info .icon-checkbox,
+.transfer .transfer-item.is-info:hover,
+.transfer .transfer-item.is-info:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-info {
+  color: #3e8ed0 !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-success,
+.transfer .icon-checkbox.is-success:hover,
+.transfer .transfer-item.is-checked.is-success .icon-checkbox,
+.transfer .transfer-item.is-success:hover,
+.transfer .transfer-item.is-success:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-success {
+  color: #48c78e !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-warning,
+.transfer .icon-checkbox.is-warning:hover,
+.transfer .transfer-item.is-checked.is-warning .icon-checkbox,
+.transfer .transfer-item.is-warning:hover,
+.transfer .transfer-item.is-warning:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-warning {
+  color: #ffe08a !important;
+}
+
+.transfer .icon-checkbox.is-checked.is-danger,
+.transfer .icon-checkbox.is-danger:hover,
+.transfer .transfer-item.is-checked.is-danger .icon-checkbox,
+.transfer .transfer-item.is-danger:hover,
+.transfer .transfer-item.is-danger:hover > .icon-checkbox,
+.transfer .transfer-item.is-checked.is-danger {
+  color: #f14668 !important;
+}
+
+.transfer .icon-checkbox {
+  color: #cecfd4;
+  margin-right: 0.25rem;
 }
 
 /*# sourceMappingURL=bulma.css.map */

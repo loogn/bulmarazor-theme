@@ -1,0 +1,104 @@
+@charset "utf-8"
+
+
+.transfer
+    display: flex
+    margin: 1rem
+    color: #606266
+
+    .transfer-side
+        display: flex
+        flex-direction: column
+        flex-basis: 0
+        flex-grow: 1
+        flex-shrink: 0
+
+        .panel
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            box-shadow: none
+            border: 1px solid #ebeef5
+            border-radius: 4px
+            background: #fff
+            overflow: hidden
+            .panel-block
+                color: inherit
+            .panel-heading
+                border-radius: 4px 4px 0 0
+                background-color: #f5f7fa
+                border-bottom: 1px solid #ebeef5
+                box-sizing: border-box
+                display: flex
+                align-items: center
+                margin: 0
+                font-size: unset
+                font-weight: unset
+                padding: .5em
+
+    .transfer-title
+        cursor: pointer
+        pointer-events: all
+        flex-grow: 1
+        display: flex
+        align-items: center
+        overflow: hidden
+        text-overflow: ellipsis
+        word-break: keep-all
+
+
+    .transfer-item 
+        display: flex
+        align-items: center
+        cursor: pointer
+        pointer-events: all
+        color: #606266
+
+
+    .transfer-list
+        flex-grow: 1
+        align-items: flex-start
+        padding: 0 0.5rem
+
+    .transfer-num 
+        color: #909399
+        font-size: 12px
+        font-weight: 400
+        flex-shrink: 0
+
+    .transfer-middle
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        flex-basis: 0
+        flex-grow: 1
+        flex-shrink: 1
+
+
+
+// .transfer .is-checked .icon-checkbox,
+// .transfer .icon-checkbox:hover {
+//     color: #485fc7;
+// }
+// .transfer .transfer-item:hover,
+// .transfer .transfer-item.is-checked {
+//     color: #485fc7;
+// }
+
+
+// Override marker color per step
+
+@each $name, $pair in $colors
+    $color: nth($pair, 1)
+    .transfer .icon-checkbox.is-checked.is-#{$name},
+    .transfer .icon-checkbox.is-#{$name}:hover,
+    .transfer .transfer-item.is-checked.is-#{$name} .icon-checkbox,
+    .transfer .transfer-item.is-#{$name}:hover,
+    .transfer .transfer-item.is-#{$name}:hover >.icon-checkbox,
+    .transfer .transfer-item.is-checked.is-#{$name}
+        color: $color !important
+
+.transfer .icon-checkbox
+        color: #cecfd4
+        margin-right: 0.25rem
