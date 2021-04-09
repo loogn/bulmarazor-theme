@@ -21416,14 +21416,6 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   cursor: not-allowed;
 }
 
-.cascader .cascader-dropdown ul.cascader-item > li.active {
-  color: #00d1b2;
-}
-
-.cascader .cascader-dropdown ul.cascader-item > li .active {
-  color: #00d1b2;
-}
-
 .cascader .cascader-dropdown ul.cascader-item > li:hover {
   background-color: whitesmoke;
 }
@@ -21455,6 +21447,56 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   background-color: #fff;
   transform: rotate(45deg);
   border: 1px solid #e4e7ed;
+}
+
+.cascader.is-white .cascader-item > li.active,
+.cascader.is-white .cascader-item > li .active {
+  color: white;
+}
+
+.cascader.is-black .cascader-item > li.active,
+.cascader.is-black .cascader-item > li .active {
+  color: #0a0a0a;
+}
+
+.cascader.is-light .cascader-item > li.active,
+.cascader.is-light .cascader-item > li .active {
+  color: whitesmoke;
+}
+
+.cascader.is-dark .cascader-item > li.active,
+.cascader.is-dark .cascader-item > li .active {
+  color: #363636;
+}
+
+.cascader.is-primary .cascader-item > li.active,
+.cascader.is-primary .cascader-item > li .active {
+  color: #00d1b2;
+}
+
+.cascader.is-link .cascader-item > li.active,
+.cascader.is-link .cascader-item > li .active {
+  color: #485fc7;
+}
+
+.cascader.is-info .cascader-item > li.active,
+.cascader.is-info .cascader-item > li .active {
+  color: #3e8ed0;
+}
+
+.cascader.is-success .cascader-item > li.active,
+.cascader.is-success .cascader-item > li .active {
+  color: #48c78e;
+}
+
+.cascader.is-warning .cascader-item > li.active,
+.cascader.is-warning .cascader-item > li .active {
+  color: #ffe08a;
+}
+
+.cascader.is-danger .cascader-item > li.active,
+.cascader.is-danger .cascader-item > li .active {
+  color: #f14668;
 }
 
 .tree {
@@ -21510,56 +21552,6 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
 
 .tree .tree-root {
   padding: 0;
-}
-
-.tree .cb.is-white:hover,
-.tree .cb.active.is-white {
-  color: white;
-}
-
-.tree .cb.is-black:hover,
-.tree .cb.active.is-black {
-  color: #0a0a0a;
-}
-
-.tree .cb.is-light:hover,
-.tree .cb.active.is-light {
-  color: whitesmoke;
-}
-
-.tree .cb.is-dark:hover,
-.tree .cb.active.is-dark {
-  color: #363636;
-}
-
-.tree .cb.is-primary:hover,
-.tree .cb.active.is-primary {
-  color: #00d1b2;
-}
-
-.tree .cb.is-link:hover,
-.tree .cb.active.is-link {
-  color: #485fc7;
-}
-
-.tree .cb.is-info:hover,
-.tree .cb.active.is-info {
-  color: #3e8ed0;
-}
-
-.tree .cb.is-success:hover,
-.tree .cb.active.is-success {
-  color: #48c78e;
-}
-
-.tree .cb.is-warning:hover,
-.tree .cb.active.is-warning {
-  color: #ffe08a;
-}
-
-.tree .cb.is-danger:hover,
-.tree .cb.active.is-danger {
-  color: #f14668;
 }
 
 .calendar {
@@ -21739,99 +21731,109 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   flex-shrink: 1;
 }
 
-.transfer .icon-checkbox.is-checked.is-white,
-.transfer .icon-checkbox.is-white:hover,
-.transfer .transfer-item.is-checked.is-white .icon-checkbox,
 .transfer .transfer-item.is-white:hover,
-.transfer .transfer-item.is-white:hover > .icon-checkbox,
+.transfer .transfer-item.is-white:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-white {
   color: white !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-black,
-.transfer .icon-checkbox.is-black:hover,
-.transfer .transfer-item.is-checked.is-black .icon-checkbox,
 .transfer .transfer-item.is-black:hover,
-.transfer .transfer-item.is-black:hover > .icon-checkbox,
+.transfer .transfer-item.is-black:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-black {
   color: #0a0a0a !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-light,
-.transfer .icon-checkbox.is-light:hover,
-.transfer .transfer-item.is-checked.is-light .icon-checkbox,
 .transfer .transfer-item.is-light:hover,
-.transfer .transfer-item.is-light:hover > .icon-checkbox,
+.transfer .transfer-item.is-light:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-light {
   color: whitesmoke !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-dark,
-.transfer .icon-checkbox.is-dark:hover,
-.transfer .transfer-item.is-checked.is-dark .icon-checkbox,
 .transfer .transfer-item.is-dark:hover,
-.transfer .transfer-item.is-dark:hover > .icon-checkbox,
+.transfer .transfer-item.is-dark:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-dark {
   color: #363636 !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-primary,
-.transfer .icon-checkbox.is-primary:hover,
-.transfer .transfer-item.is-checked.is-primary .icon-checkbox,
 .transfer .transfer-item.is-primary:hover,
-.transfer .transfer-item.is-primary:hover > .icon-checkbox,
+.transfer .transfer-item.is-primary:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-primary {
   color: #00d1b2 !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-link,
-.transfer .icon-checkbox.is-link:hover,
-.transfer .transfer-item.is-checked.is-link .icon-checkbox,
 .transfer .transfer-item.is-link:hover,
-.transfer .transfer-item.is-link:hover > .icon-checkbox,
+.transfer .transfer-item.is-link:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-link {
   color: #485fc7 !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-info,
-.transfer .icon-checkbox.is-info:hover,
-.transfer .transfer-item.is-checked.is-info .icon-checkbox,
 .transfer .transfer-item.is-info:hover,
-.transfer .transfer-item.is-info:hover > .icon-checkbox,
+.transfer .transfer-item.is-info:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-info {
   color: #3e8ed0 !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-success,
-.transfer .icon-checkbox.is-success:hover,
-.transfer .transfer-item.is-checked.is-success .icon-checkbox,
 .transfer .transfer-item.is-success:hover,
-.transfer .transfer-item.is-success:hover > .icon-checkbox,
+.transfer .transfer-item.is-success:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-success {
   color: #48c78e !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-warning,
-.transfer .icon-checkbox.is-warning:hover,
-.transfer .transfer-item.is-checked.is-warning .icon-checkbox,
 .transfer .transfer-item.is-warning:hover,
-.transfer .transfer-item.is-warning:hover > .icon-checkbox,
+.transfer .transfer-item.is-warning:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-warning {
   color: #ffe08a !important;
 }
 
-.transfer .icon-checkbox.is-checked.is-danger,
-.transfer .icon-checkbox.is-danger:hover,
-.transfer .transfer-item.is-checked.is-danger .icon-checkbox,
 .transfer .transfer-item.is-danger:hover,
-.transfer .transfer-item.is-danger:hover > .icon-checkbox,
+.transfer .transfer-item.is-danger:hover > .icon-check-radio,
 .transfer .transfer-item.is-checked.is-danger {
   color: #f14668 !important;
 }
 
-.transfer .icon-checkbox {
+.transfer .icon-check-radio {
   color: #cecfd4;
   margin-right: 0.25rem;
+}
+
+.icon-check-radio.is-white:hover, .icon-check-radio.is-white.is-checked {
+  color: white;
+}
+
+.icon-check-radio.is-black:hover, .icon-check-radio.is-black.is-checked {
+  color: #0a0a0a;
+}
+
+.icon-check-radio.is-light:hover, .icon-check-radio.is-light.is-checked {
+  color: whitesmoke;
+}
+
+.icon-check-radio.is-dark:hover, .icon-check-radio.is-dark.is-checked {
+  color: #363636;
+}
+
+.icon-check-radio.is-primary:hover, .icon-check-radio.is-primary.is-checked {
+  color: #00d1b2;
+}
+
+.icon-check-radio.is-link:hover, .icon-check-radio.is-link.is-checked {
+  color: #485fc7;
+}
+
+.icon-check-radio.is-info:hover, .icon-check-radio.is-info.is-checked {
+  color: #3e8ed0;
+}
+
+.icon-check-radio.is-success:hover, .icon-check-radio.is-success.is-checked {
+  color: #48c78e;
+}
+
+.icon-check-radio.is-warning:hover, .icon-check-radio.is-warning.is-checked {
+  color: #ffe08a;
+}
+
+.icon-check-radio.is-danger:hover, .icon-check-radio.is-danger.is-checked {
+  color: #f14668;
 }
 
 /*# sourceMappingURL=bulma.css.map */

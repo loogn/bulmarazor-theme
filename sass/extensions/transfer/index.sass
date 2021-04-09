@@ -77,28 +77,16 @@
 
 
 
-// .transfer .is-checked .icon-checkbox,
-// .transfer .icon-checkbox:hover {
-//     color: #485fc7;
-// }
-// .transfer .transfer-item:hover,
-// .transfer .transfer-item.is-checked {
-//     color: #485fc7;
-// }
 
 
-// Override marker color per step
 
 @each $name, $pair in $colors
     $color: nth($pair, 1)
-    .transfer .icon-checkbox.is-checked.is-#{$name},
-    .transfer .icon-checkbox.is-#{$name}:hover,
-    .transfer .transfer-item.is-checked.is-#{$name} .icon-checkbox,
     .transfer .transfer-item.is-#{$name}:hover,
-    .transfer .transfer-item.is-#{$name}:hover >.icon-checkbox,
+    .transfer .transfer-item.is-#{$name}:hover >.icon-check-radio,
     .transfer .transfer-item.is-checked.is-#{$name}
         color: $color !important
 
-.transfer .icon-checkbox
+.transfer .icon-check-radio
         color: #cecfd4
         margin-right: 0.25rem

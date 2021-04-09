@@ -49,9 +49,3 @@ $tree-hover-background-color: $light !default
                 
     .tree-root
         padding: 0
-
-@each $name, $pair in $colors
-    $color: nth($pair, 1)
-    .tree .cb.is-#{$name}:hover,
-    .tree .cb.active.is-#{$name}
-        color: $color
