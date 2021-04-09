@@ -21836,4 +21836,60 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   color: #f14668;
 }
 
+.loading-mask {
+  position: absolute;
+  z-index: 2000;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-mask.is-white {
+  color: white;
+}
+
+.loading-mask.is-black {
+  color: #0a0a0a;
+}
+
+.loading-mask.is-light {
+  color: whitesmoke;
+}
+
+.loading-mask.is-dark {
+  color: #363636;
+}
+
+.loading-mask.is-primary {
+  color: #00d1b2;
+}
+
+.loading-mask.is-link {
+  color: #485fc7;
+}
+
+.loading-mask.is-info {
+  color: #3e8ed0;
+}
+
+.loading-mask.is-success {
+  color: #48c78e;
+}
+
+.loading-mask.is-warning {
+  color: #ffe08a;
+}
+
+.loading-mask.is-danger {
+  color: #f14668;
+}
+
 /*# sourceMappingURL=bulma.css.map */
