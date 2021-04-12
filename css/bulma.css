@@ -21850,6 +21850,7 @@ input[type="range"].slider.is-danger.has-output + output, input[type="range"].sl
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 2em;
 }
 
 .loading-mask.is-white {
